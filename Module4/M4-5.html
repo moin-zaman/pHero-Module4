@@ -26,13 +26,22 @@
         nav > ul.ull li a{
             text-decoration: none;
             font-size: 25px;
-            color: white;
+            color: black;
         }
 
         nav > ul.ull li a:hover{
             color: brown;
             text-decoration: underline;
             text-shadow: 1px 1px blue;
+        }
+
+        nav ul.ull li ul.ulll{
+           display: none;
+        }
+        nav ul.ull li:hover ul.ulll{
+            display: block;
+            position: absolute;
+            padding: 15px;
         }
 
     </style>
@@ -46,7 +55,14 @@
         <ul class="ull">
             <li><a href="#">Home</a></li>
             <li><a href="#">Tutorial</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">About</a>
+                <ul class="ulll">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </li>
             <li><a href="#">Education</a></li>
         </ul>
     </nav>
